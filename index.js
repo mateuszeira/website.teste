@@ -17,9 +17,9 @@ router.get('/lol', function(req, res){
 app.use('/lol', router);
 
 //Navigate your website
-//if they go to '/inicio'
+//if they go to '/inico'
 router.get('/inicio', function(req, res){
-  res.sendFile(path.join(__dirname, '/inicio.html'));
+  res.sendFile(path.join(__dirname, '/inico.html'));
 });
 app.use('/inico', router);
 //404 Error
