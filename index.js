@@ -17,11 +17,11 @@ router.get('/lol', function(req, res){
 app.use('/lol', router);
 
 //Navigate your website
-//if they go to '/lol'
-router.get('/t', function(req, res){
-  res.sendFile(path.join(__dirname, '/t.html'));
+//if they go to '/inicio'
+router.get('/inicio', function(req, res){
+  res.sendFile(path.join(__dirname, '/inicio.html'));
 });
-app.use('/t', router);
+app.use('/inico', router);
 //404 Error
 app.use(function(req, res, next) {
     res.status(404);
